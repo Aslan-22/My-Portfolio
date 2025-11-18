@@ -1,62 +1,243 @@
-:root {
---bg: #0b1733;
---card: #102544;
---accent: #19d4c9;
---accent-2: #ffcc88;
---text: #f5f5f5;
---muted: #a8b5c8;
---glass: rgba(255, 255, 255, 0.08);
---radius: 14px;
---fnt: 'Allura';
-}
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-body {
-background: linear-gradient(180deg, var(--bg) 0%, #10203f 100%);
-color: var(--text);
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-.navbar h1 {
-font-family: var(--fnt);
-font-size: 2rem;
-color: var(--text);
-margin-left: 10px;
-}
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="static/bootstrap/Portfolio/style.css">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-ul a {
-color: var(--text) !important;
-}
+    <title>Aslan's Portfolio</title>
+</head>
 
+<body>
 
-.navbar-toggler-icon {
-filter: invert(1);
-}
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark glass navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="static/bootstrap/Portfolio/aslan-high-resolution-logo (1).png"
+                     alt="aslan-logo" class="aslan-logo">
+            </a>
 
+            <h1 class="ms-2 mb-0">Dennis Nzomo</h1>
 
-.glass {
-background: var(--glass) !important;
-backdrop-filter: blur(10px);
-}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mynav" aria-controls="mynav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div id="mynav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-.rounded-custom {
-border-radius: var(--radius) !important;
-}
+    <!-- ABOUT -->
+    <section id="about" class="my-5">
+        <div class="container glass rounded-custom p-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="static/bootstrap/Portfolio/Me.png" alt="Dennis"
+                         class="img-fluid rounded-custom mb-4" width="250">
+                </div>
 
+                <div class="col-md p-4">
+                    <h2>Welcome to my portfolio</h2>
+                    <p>
+                        I'm Dennis Nzomo, a web developer and data analyst passionate about creating modern,
+                        responsive digital experiences and extracting insights from data.
+                        Explore my work and see what I can build for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.bg-card {
-background: var(--card) !important;
-}
+    <!-- SERVICES -->
+    <section id="services" class="mb-5">
+        <div class="container glass rounded-custom p-4">
+            <h2 class="text-center mb-4">Services</h2>
 
+            <div class="row g-4">
 
-.aslan-logo {
-height: 50px;
-}
+                <div class="col-md-4">
+                    <div class="card bg-card glass p-3 rounded-custom h-100 text-bg-primary">
+                        <h5 class="card-title text-center">
+                            <i class="bi bi-code-slash fs-1"></i><br>Web Development
+                        </h5>
+                        <p class="card-text text-center">Responsive, modern websites built with clean optimized code.</p>
+                    </div>
+                </div>
 
+                <div class="col-md-4">
+                    <div class="card bg-card glass p-3 rounded-custom h-100 text-bg-primary">
+                        <h5 class="card-title text-center">
+                            <i class="bi bi-graph-up fs-1"></i><br>Data Analysis
+                        </h5>
+                        <p class="card-text text-center">Insight extraction and visualizations for decision-making.</p>
+                    </div>
+                </div>
 
-.hearts {
-color: #ffcc88;
-}
+                <div class="col-md-4">
+                    <div class="card bg-card glass p-3 rounded-custom h-100 text-bg-primary">
+                        <h5 class="card-title text-center">
+                            <i class="bi bi-lightbulb fs-1"></i><br>Consulting
+                        </h5>
+                        <p class="card-text text-center">Digital strategy, analytics guidance, and tailored tech solutions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mb-5">
+        <div class="container glass rounded-custom p-4">
+            <h2 class="text-center mb-4">Projects</h2>
+
+            <div class="row g-4 text-center">
+
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-card glass p-3 rounded-custom h-100">
+                        <img src="https://github.com/Aslan-22/Aslan-Apparels/blob/Master/aslan-apparels-logo.png?raw=true"
+                             class="card-img-top rounded-custom img-fluid"
+                             alt="Aslan Apparels"
+                             style="width:100%; height:200px; object-fit:cover;" loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Aslan Apparels</h5>
+                            <div class="d-flex flex-column gap-2">
+                                <a class="btn btn-primary"
+                                   href="#"
+                                   onclick="window.open('https://aslan-22.github.io/Aslan-Apparels/','preview','width=1024,height=768'); return false;">
+                                    Preview
+                                </a>
+                                <a class="btn btn-outline-light" target="_blank"
+                                   href="https://aslan-22.github.io/Aslan-Apparels/">
+                                    Open in new tab
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-card glass p-3 rounded-custom h-100">
+                        <img src="https://api.logo.com/api/v2/images?design=lg_e9Z3afLlIeZCXw5eli&width=500"
+                             class="card-img-top rounded-custom img-fluid"
+                             alt="Safari Solutions"
+                             style="width:100%; height:200px; object-fit:cover;" loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Safari Solutions</h5>
+                            <div class="d-flex flex-column gap-2">
+                                <a class="btn btn-primary"
+                                   href="#"
+                                   onclick="window.open('https://aslan-22.github.io/Safari-Solutions/','preview','width=1024,height=768'); return false;">
+                                    Preview
+                                </a>
+                                <a class="btn btn-outline-light" target="_blank"
+                                   href="https://aslan-22.github.io/Safari-Solutions/">
+                                    Open in new tab
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-card glass p-3 rounded-custom h-100">
+                        <img src="https://api.logo.com/api/v2/images?design=lg_dfNQKRqST19FjqW7WY&width=500"
+                             class="card-img-top rounded-custom img-fluid"
+                             alt="Tournament Hub"
+                             style="width:100%; height:200px; object-fit:cover;" loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Tournament Hub</h5>
+                            <div class="d-flex flex-column gap-2">
+                                <a class="btn btn-primary"
+                                   href="#"
+                                   onclick="window.open('https://aslan-22.github.io/Tournament-Hub/','preview','width=1024,height=768'); return false;">
+                                    Preview
+                                </a>
+                                <a class="btn btn-outline-light" target="_blank"
+                                   href="https://aslan-22.github.io/Tournament-Hub/">
+                                    Open in new tab
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mb-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Let's build something</h2>
+
+            <div class="card glass rounded-custom p-4 mx-auto" style="max-width:720px;">
+                <form id="contact-form" action="https://formspree.io/f/your-form-id"
+                      method="POST" class="row g-3">
+
+                    <div class="col-md-6">
+                        <input id="name" name="name" type="text" class="form-control"
+                               placeholder="Your name" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="email" name="email" type="email"
+                               class="form-control" placeholder="Your email" required>
+                    </div>
+
+                    <div class="col-12">
+                        <textarea id="message" name="message" class="form-control"
+                                  placeholder="Tell me about your project" rows="6" required></textarea>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-end gap-2">
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                        <a class="btn btn-outline-light" href="mailto:youremail@example.com">Or email me</a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 mt-5 glass text-white text-center">
+        <div class="container">
+            <p class="mb-0">Made with <span class="hearts">&hearts;</span> by Aslan</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
